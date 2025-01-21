@@ -46,20 +46,14 @@ var limiter = rate.NewLimiter(2, 5) // 2 requests per second with a burst of 5
 
 // Initialize the database
 func initDB() {
-	// Используем переменную окружения DATABASE_URL для подключения
-	dsn := os.Getenv("DATABASE_URL")
-	if dsn == "" {
-		// Если переменная окружения не задана, используем стандартную строку подключения
-		dsn = "host=localhost user=postgres password=1234 dbname=sportlife port=5432 sslmode=disable"
-	}
-
+	dsn := "user=postgres password=1234 dbname=sportlife sslmode=disable"
 	var err error
 	db, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
 		logger.WithField("error", err).Fatal("Не удалось подключиться к базе данных")
 	}
 
-	// Миграции для моделей
+	// Migrate models
 	db.AutoMigrate(&User{}, &Booking{})
 	logger.Info("Успешно подключено к базе данных и выполнена миграция")
 }
