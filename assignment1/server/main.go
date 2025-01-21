@@ -50,7 +50,7 @@ func initDB() {
 	dsn := os.Getenv("DATABASE_URL")
 	if dsn == "" {
 		// Если переменная окружения не задана, используем стандартную строку подключения
-		dsn = "user=postgres password=1234 dbname=sportlife sslmode=disable"
+		dsn = "host=localhost user=postgres password=1234 dbname=sportlife port=5432 sslmode=disable"
 	}
 
 	var err error
