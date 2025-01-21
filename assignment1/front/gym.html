@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportLife Gym</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <ul class="nav-left" id="navbar-links">
+            <li><a href="home.html">ГЛАВНАЯ</a></li>
+            <li><a href="field-beketbatyra.html">ПОЛЕ БЕКЕТ БАТЫРА</a></li>
+            <li><a href="field-orynbaeva.html">ПОЛЕ ОРЫНБАЕВА</a></li>
+            <li><a href="gym.html">ТРЕНАЖЕРНЫЙ ЗАЛ</a></li>
+        </ul>
+
+        <div class="nav-center">
+            <a href="home.html">
+                <img src="img/logo.webp" alt="SportLife Logo" class="navbar-logo">
+            </a>
+        </div>
+
+        <div class="nav-right">
+            <a href="admin-panel.html" class="admin-button">Admin Panel</a>
+        </div>
+
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+
+
+<section class="photo-carousel-section">
+    <div class="carousel-container">
+        <div id="gymCarousel" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#gymCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#gymCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#gymCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="carousel_images/gym1.webp" class="d-block w-100" alt="Beket Batyra Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="carousel_images/gym2.webp" class="d-block w-100" alt="Beket Batyra Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="carousel_images/gym3.webp" class="d-block w-100" alt="Beket Batyra Image 3">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#gymCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#gymCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="carousel-text-section">
+    <div class="container">
+        <div class="row">
+            <div id="textSlide1" class="carousel-text-item active">
+                <h2 class="carousel-title">ЗАЛ SPORTLIFE</h2>
+                <p class="carousel-subtitle">Открой новые горизонты своей физической формы в современном и просторном зале SportLife. Всё, что нужно для достижения ваших целей - в одном месте</p>
+            </div>
+            <div id="textSlide2" class="carousel-text-item">
+                <h2 class="carousel-title">ЖЕЛЕЗО И СИЛА</h2>
+                <p class="carousel-subtitle">Прокачай свое тело с лучшим оборудованием для силовых тренировок. От гантелей до профессиональных штанг - всё для твоей максимальной силы !</p>
+            </div>
+            <div id="textSlide3" class="carousel-text-item">
+                <h2 class="carousel-title">КАРДИО ДЛЯ ЭНЕРГИИ</h2>
+                <p class="carousel-subtitle">Поддержи свою выносливость и укрепи здоровье на кардио-тренажерах. Бег, велосипед или эллипс - выбирай что тебе по душе !</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="brief-info">
+    <div class="info-container">
+        <div class="info-item">
+            <h2>450 м2</h2>
+            <p>Площадь</p>
+            <img src="icons/1295109.webp" alt="Area Icon" class="info-icon">
+        </div>
+        <div class="info-item">
+            <h2>8</h2>
+            <p>Душевых</p>
+            <img src="icons/4163383.webp" alt="Shower Icon" class="info-icon">
+        </div>
+        <div class="info-item">
+            <h2>104</h2>
+            <p>Шкафчиков</p>
+            <img src="icons/360_F_577986688_QsIR75W0QDYoe3AYGCnEmMeGLACLyNUf.webp" alt="Locker Icon" class="info-icon">
+        </div>
+    </div>
+</section>
+
+
+<a href="form.html"><button class="book-button">СВЯЗАТЬСЯ</button></a>
+
+<section class="photo-gallery-section container my-5 d-flex flex-md-row flex-column justify-content-between align-items-center text-dark">
+    <div class="gallery-container col-md-6 text-center mb-4 p-4">
+        <div class="row">
+            <div class="col-6 mb-2">
+                <img src="fields/IMG_0896.JPG" alt="Field 1" class="gallery-img rounded" style="width: 100%; height: 239px; object-fit: cover;">
+            </div>
+            <div class="col-6 mb-2">
+                <img src="fields/IMG_0897.JPG" alt="Field 2" class="gallery-img rounded" style="width: 100%; height: 239px; object-fit: cover;">
+            </div>
+            <div class="col-6">
+                <img src="fields/IMG_0898.JPG" alt="Field 3" class="gallery-img rounded" style="width: 100%; height: 324px; object-fit: cover;">
+            </div>
+            <div class="col-6">
+                <div class="custom-video-container">
+                    <video id="customVideo1" class="custom-video" autoplay loop muted>
+                        <source src="videos/beket.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button id="playPauseButton1" class="play-pause-button"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 field-text text-center text-md-start p-4">
+        <h2 class="modern-heading text-primary mb-3">Футбольные поля</h2>
+        <p class="modern-description text-muted">
+            Добро пожаловать в сеть спортивных комплексов Sport Life по улице Бекет Батыра 86! Наши футбольные поля стандарта футзала предоставляют собой площадку в размере 48х25 метров. На данных полях вы можете провести различные тренировки и мероприятия связанные с футболом.
+        </p>
+    </div>
+</section>
+
+<section class="photo-gallery-section container my-5 d-flex flex-md-row flex-column-reverse justify-content-between align-items-center text-dark bg-custom">
+    <div class="col-md-6 field-text text-center text-md-start p-4">
+        <h2 class="modern-heading text-primary mb-3">Раздевалки</h2>
+        <p class="modern-description text-muted">
+            В комплексе Sport Life для каждой команды имеется своя раздевалка, где футболисты имеют возможность получить все удобства для подготовки к тренировкам с комфортом.
+        </p>
+    </div>
+
+    <div class="gallery-container col-md-6 text-center mb-4 p-4">
+        <div class="row">
+            <div class="col-6 mb-2">
+                <img src="gym/IMG_0881.JPG" alt="Locker 1" class="gallery-img rounded" style="width: 100%; height: 239px; object-fit: cover;">
+            </div>
+            <div class="col-6 mb-2">
+                <img src="gym/IMG_0883.JPG" alt="Locker 2" class="gallery-img rounded" style="width: 100%; height: 239px; object-fit: cover;">
+            </div>
+            <div class="col-6">
+                <img src="gym/IMG_0894.JPG" alt="Locker 3" class="gallery-img rounded" style="width: 100%; height: 324px; object-fit: cover;">
+            </div>
+            <div class="col-6">
+                <div class="custom-video-container">
+                    <video id="customVideo2" class="custom-video" autoplay loop muted>
+                        <source src="videos/oryb.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button id="playPauseButton2" class="play-pause-button"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="photo-gallery-section container my-5 d-flex flex-md-row flex-column justify-content-between align-items-center text-dark">
+    <div class="gallery-container col-md-6 text-center mb-4 p-4">
+        <div class="row">
+            <div class="col-6 mb-2">
+                <img src="gym/IMG_0889.JPG" alt="Washroom 1" class="gallery-img rounded" style="width: 100%; height: 239px; object-fit: cover;">
+            </div>
+            <div class="col-6 mb-2">
+                <img src="gym/IMG_0887.JPG" alt="Washroom 2" class="gallery-img rounded" style="width: 100%; height: 239px; object-fit: cover;">
+            </div>
+            <div class="col-6">
+                <img src="gym/IMG_0888.JPG" alt="Washroom 3" class="gallery-img rounded" style="width: 100%; height: 324px; object-fit: cover;">
+            </div>
+            <div class="col-6">
+                <div class="custom-video-container">
+                    <video id="customVideo3" class="custom-video" autoplay loop muted>
+                        <source src="videos/gym.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button id="playPauseButton3" class="play-pause-button"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 field-text text-center text-md-start p-4">
+        <h2 class="modern-heading text-primary mb-3">Душевые</h2>
+        <p class="modern-description text-muted">
+            Имеется 4 душевых кабинок и 1 с/у для каждой команды.
+        </p>
+    </div>
+</section>
+
+<section class="gym-subscription-section py-5 bg-custom">
+    <div class="container-plans">
+        <h2 class="bold-text text-center mb-5">Выбери свой тариф</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="subscription-plan">
+                    <h4>1 месяц 12 посещений (08:00 - 17:00)</h4>
+                    <p class="price">15 000 ₸</p>
+                </div>
+                <div class="subscription-plan">
+                    <h4>1 месяц 12 посещений</h4>
+                    <p class="price">18 000 ₸</p>
+                </div>
+                <div class="subscription-plan">
+                    <h4>1 месяц безлимит</h4>
+                    <p class="price">25 000 ₸</p>
+                </div>
+                <div class="subscription-plan">
+                    <h4>6 месяцев безлимит (+5 гостевых +5 персональных тренеровок с тренером)</h4>
+                    <p class="price">80 000 ₸</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="subscription-plan">
+                    <h4>1 год безлимит (+10 гостевых +10 персональных тренеровок с тренером)</h4>
+                    <p class="price">130 000 ₸</p>
+                </div>
+                <div class="subscription-plan">
+                    <h4>1 год безлимит (женский абонемент)</h4>
+                    <p class="price">120 000 ₸</p>
+                </div>
+                <div class="subscription-plan">
+                    <h4>Разовая тренировка</h4>
+                    <p class="price">2 000 ₸</p>
+                </div>
+                <div class="subscription-plan">
+                    <h4>Разовая тренировка с тренером</h4>
+                    <p class="price">4 000 ₸</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-4">
+        <p class="discount-text">Скидка студентам 15% на абонемент в тренажерный зал</p>
+    </div>
+</section>
+
+<section class="gym-coaches-section my-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                <div class="coach-card shadow-sm h-100">
+                    <img src="gym/photo_2024-09-20_22-08-49.jpg" class="card-img-top" alt="Владимир">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Дмитрий</h5>
+                        <p class="card-text">Индивидуальные тренировки, силовые тренировки.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                <div class="coach-card shadow-sm h-100">
+                    <img src="gym/photo_2024-09-21_19-06-59.jpg" class="card-img-top" alt="Сергей">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Владимир</h5>
+                        <p class="card-text">10+ лет опыта в силовом тренинге. Особое внимание к технике и безопасности.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                <div class="coach-card shadow-sm h-100">
+                    <img src="gym/photo_2024-09-21_19-06-59.jpg" class="card-img-top" alt="Сергей">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Виолетта</h5>
+                        <p class="card-text">10+ лет опыта в силовом тренинге. Особое внимание к технике и безопасности.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                <div class="coach-card shadow-sm h-100">
+                    <img src="gym/photo_2024-09-21_19-06-59.jpg" class="card-img-top" alt="Сергей">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Сергей</h5>
+                        <p class="card-text">10+ лет опыта в силовом тренинге. Особое внимание к технике и безопасности.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-location-section py-5">
+    <div class="container">
+        <div class="row text-center text-lg-start">
+            <div class="col-lg-4 mb-4">
+                <h2 class="contact-heading mb-4">Контакты:</h2>
+                <p class="contact-info">
+                    <span><strong>Телефон:</strong> <a href="tel:+77001311973" class="phone-number">+7 700-131-19-73</a></span><br>
+                    <span><strong>Адрес:</strong> <a href="https://2gis.kz/shymkent/firm/70000001026131850/69.6217%2C42.31356?m=69.621791%2C42.31349%2F19.41"><span class="address-text">Бекет Батыра 86</span></a></span>
+                </p>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <h2 class="contact-heading mb-4">Часы работы:</h2>
+                <p class="opening-hours">
+                    <strong>Понедельник:</strong> 08:00 - 22:00<br>
+                    <strong>Вторник</strong> 08:00 - 22:00<br>
+                    <strong>Среда</strong> 08:00 - 22:00<br>
+                    <strong>Четверг</strong> 08:00 - 22:00<br>
+                    <strong>Пятница</strong> 08:00 - 22:00<br>
+                    <strong>Суббота</strong> 08:00 - 22:00<br>
+                    <strong>Воскресенье</strong> 12:00 - 20:00<br>
+                </p>
+            </div>
+
+            <div class="col-lg-4">
+                <div id="yandex-map" class="location-map shadow-sm rounded"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section logo-section">
+            <img src="img/logo.webp" alt="SportLife Logo" class="footer-logo" />
+            <p>Powered by SportLife</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/sport_life_shymkent/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h5>Information</h5>
+            <ul>
+                <li><a href="#">Публичная оферта</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Правила посещения клуба</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h5>Menu</h5>
+            <ul>
+                <li><a href="home.html">Главная</a></li>
+                <li><a href="contact.html">О нас</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h5>Call Center</h5>
+            <ul>
+                <li>
+                    <a href="https://wa.me/77001311973" target="_blank">Напишите нам на WhatsApp</a>
+                </li>
+                <li><a href="tel:+77001311973">Позвоните нам</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/gym.js"></script>
+
+</body>
+</html>

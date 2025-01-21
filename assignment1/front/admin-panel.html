@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="admin-container">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar">
+        <ul>
+            <li><a href="#users" class="active"><i class="fas fa-users"></i> Manage Users</a></li>
+            <li><a href="#bookings"><i class="fas fa-calendar-alt"></i> Manage Bookings</a></li>
+            <li><a href="#emails"><i class="fas fa-envelope"></i> Send Emails</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="admin-content">
+        <div id="users">
+            <h2>Manage Users</h2>
+            <button id="add-user-button">Add User</button>
+            <form id="add-user-form" style="display:none;">
+                <input type="email" id="user-email" placeholder="User Email" required />
+                <input type="password" id="user-password" placeholder="User Password" required />
+                <button type="submit">Add User</button>
+            </form>
+            <table>
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody id="user-table-body"></tbody>
+            </table>
+        </div>
+
+        <div id="bookings">
+            <h2>Manage Bookings</h2>
+            <button id="add-booking-button">Add Booking</button>
+            <form id="add-booking-form" style="display: none;">
+                <input type="date" id="booking-date" placeholder="Booking Date" required />
+                <input type="time" id="booking-time" placeholder="Booking Time" required />
+                <input type="text" id="booking-field" placeholder="Field Name" required />
+                <button type="submit">Add Booking</button>
+            </form>
+            <table>
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Field</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody id="booking-table-body"></tbody>
+            </table>
+        </div>
+
+        <div id="emails">
+            <h2>Send Emails</h2>
+            <form id="email-form">
+                <input type="email" id="email-to" placeholder="Recipient Email (optional)" />
+                <input type="text" id="email-subject" placeholder="Subject" required />
+                <textarea id="email-body" placeholder="Message Body" required></textarea>
+                <input type="file" id="email-attachment" />
+                <button type="submit">Send Email</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<script src="js/admin-panel.js"></script>
+</body>
+</html>
