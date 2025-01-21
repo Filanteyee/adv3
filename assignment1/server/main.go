@@ -46,7 +46,12 @@ var limiter = rate.NewLimiter(2, 5) // 2 requests per second with a burst of 5
 
 // Initialize the database
 func initDB() {
-	dsn := "user=postgres password=1234 dbname=sportlife sslmode=disable"
+	// Update the DSN with Railway database details
+	// Using the new host `autorack.proxy.rlwy.net` and the provided credentials
+	dsn := fmt.Sprintf(
+		"host=autorack.proxy.rlwy.net user=postgres password=nLoqkqtqDyyeXELSjyRVGTRhEKjrhqCn dbname=railway port=41607 sslmode=disable",
+	)
+
 	var err error
 	db, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
